@@ -1,0 +1,35 @@
+/* Remove default margin and padding from the root element */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set box-sizing to border-box to include padding and border in the element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Optionally, you can apply some additional styling to ensure full-width and full-height layout */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: auto; /* Ensure content is still scrollable */
+}
+
+/* Optionally, you can remove any border or outline styles applied to elements */
+* {
+  border: none;
+  outline: none;
+}
+
+/* Optionally, you can remove any default focus styles applied to elements */
+*:focus {
+  outline: none;
+}
+
+/* Hide scrollbar for WebKit-based browsers */
+::-webkit-scrollbar {
+  width: 0; /* Hide scrollbar */
+  height: 0; /* Hide scrollbar */
+}
+

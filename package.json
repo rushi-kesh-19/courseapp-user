@@ -1,5 +1,6 @@
 {
-  "name": "curseapp-user",
+  "name": "courseapp-user",
+  "homepage": "https://rushi-kesh-19.github.io/courseapp-user",
   "private": true,
   "version": "0.0.0",
   "type": "module",

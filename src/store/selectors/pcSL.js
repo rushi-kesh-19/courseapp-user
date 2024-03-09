@@ -1,19 +1,19 @@
 import { selector } from "recoil";
-import { userState } from "../atoms/pcourses";
+import { pcoursesState } from "../atoms/pcourses";
 
 export const pcLoadingState= selector({
     key:'pcLoadingState',
     get:({get})=>{
-        const state= get(pcState);
+        const state= get(pcoursesState);
         return state.isLoading;
     }
 })
 
 
 export const pcSelector= selector({
-    key:'userSelector',
+    key:'pcSelector',
     get:({get})=>{
-        const state= get(userState);
-        return state.username;
+        const state= get(pcoursesState);
+        return state.pcourse;
     }
 })
